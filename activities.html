@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Wonderland!</title>
+    <link href="./css/activities.css" rel="stylesheet" type="text/css" />
+
+    <script src="./js/activities.js" defer></script>
+
+
+</head>
+<menu>
+    <a href="./index.html">Home</a>
+    <a href="./history.html">History</a>
+    <a href="./activities.html" class="clicked">Activities</a>
+    <a href="./games.html">Games</a>
+</menu>
+
+<body>
+    <intro><img src="./media/ski.jpg">
+        <p> Holiday Activities</p>
+    </intro>
+    <div class="main">
+        <search><input id="search"><button id="enter">Search</button></search>
+        <filters>
+            <div id="unselected">
+                <button class="filterClass" id="games">Games</button>
+                <button class="filterClass" id="baking">Baking</button>
+                <button class="filterClass" id="indoors">Indoors</button>
+                <button class="filterClass" id="outdoors">Outdoors</button>
+                <button class="filterClass" id="food">Food</button>
+                <button class="filterClass" id="crafts">Crafts</button>
+                <button class="filterClass" id="donate">Donate</button>
+            </div>
+        </filters>
+        <br>
+        <div class="activity-flex" id="activity-list">
+        </div>
+        <div id="error">
+            <p>There is no result that matches the given criteria. Please Try Again!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
