@@ -36,7 +36,7 @@ Why stop at one game when you can have more? Winter Wonderland is hoping to be a
 - History.com was used to create the information on the Timeline on the Second Web Page
 - External links from this website are not the property of the web designer(Me!)
 
-##Colors and Fonts
+## Colors and Fonts
 | Colors | Hex |
 | ----------- | ----------- |
 | Dark Blue | #4184cc |
