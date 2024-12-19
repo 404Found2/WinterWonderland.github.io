@@ -80,6 +80,7 @@ function updateActive(ids) {
 function deleteBtn() {
     formatted = activeRow * 5 + activeBox;
     document.getElementById(formatted).innerHTML = " ";
+    document.getElementById((formatted - 1 )).innerHTML = " ";
     activeBox--;
     if (activeBox < 1) {
         activeBox = 1;
