@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+:root {
+    --blue: #AFDAE9;
+    --light-b: #865A3F44;
+    --mid-blue: #8DDBF2;
+    --c-2: #4184cc;
+    --brown: #865A3F;
+    --veryLightBlue: #e9f5f9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+html {
+    background: var(--veryLightBlue);
+}
+
+body {
+    padding-top: 50px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.imageBk {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 0px !important;
+    padding: 0px;
+}
+
+menu {
+    z-index: 999999;
+    padding: 0px;
+    margin-top: 0px !important;
+    width: 100vw;
+    height: 70px;
+    background: var(--mid-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+menu a {
+    color: var(--c-2);
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+menu a:hover,
+.clicked {
+    background: var(--c-2);
+    color: var(--mid-blue);
+    transition: 1s;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/********************** START OF INTRO **********************/
+intro img {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+    position: relative;
+}
+
+intro p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--c-2);
+}
+
+/********************** END OF INTRO **********************/
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+screen {
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px var(--mid-blue);
+}
+
+#grid {
+    display: grid;
+    margin: 20px auto;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    width: 300px;
+    gap: 10px;
+}
+
+.letter {
+    background: var(--light-b);
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.r1,
+.r2,
+.r3 {
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.long {
+    width: 50px;
+}
+
+.keys {
+    border-radius: 7px;
+}
+
+.letter {
+    user-select: none;
+}
+
+.keys:hover {
+    background: var(--blue);
+}
+
+#win,
+#loss,
+#wordle {
+    display: none;
+}
+
+.center {
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.center div,
+.center div span {
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    overflow: visible;
+}
+
+.center {
+    background-color: #FFFA;
+}
+
+#start1,
+#start2,
+#start0 {
+    background: var(--mid-blue);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Henny Penny", system-ui;
+    border-radius: 10px;
+}
+
+#start1:hover,
+#start2:hover,
+#start0:hover {
+    background: var(--c-2);
+}
+
+#first {
+    background: url('../media/wordle.png'), white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

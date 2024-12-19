@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Wonderland!</title>
+    <link href="./tictac.css" rel="stylesheet" type="text/css" />
+    <script src="./tictac.js" defer></script>
+
+
+</head>
+<menu>
+    <a href="../index.html">Home</a>
+    <a href="../history.html">History</a>
+    <a href="../activities.html">Activities</a>
+    <a href="../games.html" class="clicked">Games</a>
+</menu>
+
+<intro><img src="../media/tie.png">
+    <p>Halloween Tic-Tac-Toe</p>
+</intro>
+<main>
+    <screen id="game">
+        <div class="controls">
+            <img id="turn1" class="turnActive" src="../media/player1.png">
+            <img id="turn2" src="../media/player2.png">
+        </div>
+
+        <div class="board" id="board">
+            <div id="a" class="free"></div>
+            <div id="b" class="free"></div>
+            <div id="c" class="free"></div>
+
+            <div id="d" class="free"></div>
+            <div id="e" class="free"></div>
+            <div id="f" class="free"></div>
+
+            <div id="g" class="free"></div>
+            <div id="h" class="free"></div>
+            <div id="j" class="free"></div>
+        </div>
+    </screen>
+
+    <screen id="first">
+        <div class="center">Christmas Tic-Tac-Toe</div>
+        <div href="./tictac.html" id="start0">Start</div>
+    </screen>
+
+    <screen id="pl1">
+        <div class="center">Player 1 Has Won!</div>
+        <a href="./tictac.html" id="start1">Play Again</a>
+    </screen>
+
+    <screen id="pl2">
+        <div class="center">Player 2 Has Won!</div>
+        <a href="./tictac.html" id="start2">Play Again</a>
+    </screen>
+
+    <screen id="pl3">
+        <div class="center">It's A Tie</div>
+        <a href="./tictac.html" id="start3">Play Again</a>
+    </screen>
+
+</main>
+
+</html>

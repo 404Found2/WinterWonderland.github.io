@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Wonderland!</title>
+    <link href="./trivia.css" rel="stylesheet" type="text/css" />
+    <script src="./trivia.js" defer></script>
+
+
+</head>
+<menu>
+    <a href="../index.html">Home</a>
+    <a href="../history.html">History</a>
+    <a href="../activities.html">Activities</a>
+    <a href="../games.html" class="clicked">Games</a>
+</menu>
+
+<intro><img src="../media/trivia.png">
+    <p>Christmas Trivia</p>
+</intro>
+<main>
+    <quiz id="quiz">
+        <div class="question" id="question">Question</div>
+        <answer>
+            <options>
+                <input id="one" type="radio" name="option">
+                <label for="one" id="I">
+                    Option A</label><br>
+                <input id="two" type="radio" name="option">
+                <label for="two" id="II">
+                    Option B</label><br>
+                <input id="three" type="radio" name="option">
+                <label for="three" id="III">
+                    Option C</label><br>
+                <input id="four" type="radio" name="option">
+                <label for="four" id="IV">
+                    Option D</label><br>
+            </options>
+        </answer>
+        <div class="controls">
+            <button id="back">Back</button>
+            <div id='progress'>1 / 10</div>
+            <button id="next">Next</button>
+        </div>
+    </quiz>
+    <quiz id="ans">
+    </quiz>
+    <quiz id="first">
+        <div class="center">Christmas Trivia!</div>
+        <div id="start0">Start</div>
+    </quiz>
+
+</main>
+
+</html>

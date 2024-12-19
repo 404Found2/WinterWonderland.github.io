@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+:root {
+    --blue: #AFDAE9;
+    --light-b: #865A3F44;
+    --mid-blue: #8DDBF2;
+    --c-2: #4184cc;
+    --brown: #865A3F;
+    --veryLightBlue: #e9f5f9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+html {
+    background: var(--veryLightBlue);
+}
+
+body {
+    padding-top: 50px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.imageBk {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 0px !important;
+    padding: 0px;
+}
+
+menu {
+    z-index: 999999;
+    padding: 0px;
+    margin-top: 0px !important;
+    width: 100vw;
+    height: 70px;
+    background: var(--mid-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+menu a {
+    color: var(--c-2);
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+menu a:hover,
+.clicked {
+    background: var(--c-2);
+    color: var(--mid-blue);
+    transition: 1s;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/********************** START OF INTRO **********************/
+intro img {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+    position: relative;
+}
+
+intro p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--c-2);
+}
+
+/********************** END OF INTRO **********************/
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+quiz {
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px var(--mid-blue);
+}
+
+#quiz {
+    display: grid;
+    grid-template-areas: "q a c";
+}
+
+.question {
+    grid-area: q;
+    font-size: 32px;
+    padding-left: 45px;
+    padding-top: 40px;
+    color: var(--c-2);
+}
+
+answer {
+    font-size: 24px;
+    grid-area: a;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+input {
+    accent-color: var(--brown);
+
+    width: 35px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+label.selected,
+label:hover {
+    color: var(--brown);
+}
+
+options {
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.controls {
+    grid-area: c;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+#back {
+    grid-area: l;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#progress {
+    grid-area: m;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next {
+    grid-area: r;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+#next,
+#back {
+    background: var(--c-2);
+    border-radius: 10px;
+    width: 100px;
+    border: 0px solid black;
+    color: white;
+}
+
+.mainButton {
+    color: white;
+}
+
+.gap {
+    background: var(--c-2);
+    width: calc(100% - 50px);
+    height: 30px;
+    border-radius: 10px;
+    border: 0px solid black;
+    color: white;
+    margin: 20px auto !important;
+    padding: 5px;
+    z-index: 10000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+#next:hover,
+#back:hover {
+    background: var(--mid-blue);
+    transition: 0.5s;
+}
+
+answers div {
+    background: var(--light-b);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px 20px;
+}
+
+#ans .question {
+    font-size: 24px;
+    margin: 2px -20px;
+}
+
+#ans {
+    display: none;
+}
+
+.ans.correct {
+    background: #63C32888;
+}
+
+.ans.incorrect {
+    background: #D0282388;
+}
+
+.score.question {
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 800
+}
+
+.quest {
+    padding-bottom: 10px;
+    z-index: 0;
+    margin-bottom: 0px;
+}
+
+
+#quiz {
+    display: none;
+}
+
+#first {
+    background: url("../media/trivia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    width: 100%;
+    background: #FFFFFFDD;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    color: var(--c-2);
+    font-size: 48px;
+}
+
+#start0 {
+    background: var(--c-2);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+#start0:hover {
+    background: var(--mid-blue);
+}
