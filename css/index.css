@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+:root {
+    --blue: #AFDAE9;
+    --light-b: #865A3F44;
+    --mid-blue: #8DDBF2;
+    --c-2: #4184cc;
+    --brown: #865A3F;
+    --veryLightBlue: #e9f5f9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+html {
+    background: var(--veryLightBlue);
+}
+
+body {
+    padding-top: 50px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.imageBk {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 0px !important;
+    padding: 0px;
+}
+
+menu {
+    z-index: 999999;
+    padding: 0px;
+    margin-top: 0px !important;
+    width: 100vw;
+    height: 70px;
+    background: var(--mid-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+menu a {
+    color: var(--c-2);
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+menu a:hover,
+.clicked {
+    background: var(--c-2);
+    color: var(--mid-blue);
+    transition: 1s;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/********************** START OF INTRO **********************/
+intro img {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+    position: relative;
+}
+
+intro p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--c-2);
+}
+
+/********************** END OF INTRO **********************/
+
+
+.timer {
+    background: #AFDAE9EE;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translatey(-4px);
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--c-2);
+}
+
+
+.box {
+    width: 80%;
+    margin: 20px auto;
+    background: var(--veryLightBlue);
+    display: grid;
+    grid-template-areas: "d h m s" "dL hL mL sL";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+
+#days {
+    grid-area: d;
+}
+
+#hours {
+    grid-area: h;
+}
+
+#minutes {
+    grid-area: m;
+}
+
+#seconds {
+    grid-area: s;
+}
+
+#dayL {
+    grid-area: dL;
+}
+
+#hourL {
+    grid-area: hL;
+}
+
+#minuteL {
+    grid-area: mL;
+}
+
+#secondL {
+    grid-area: sL;
+}
+
+
+.num {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: var(--brown);
+}
+
+.labels {
+    color: var(--c-2);
+    font-family: "Mountains of Christmas", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+}
+
+#nxtH {
+    background: var(--c-2);
+    width: 170px;
+    padding: 5px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+}
+
+.tree {
+    overflow: visible;
+    position: relative;
+    margin: auto;
+    width: 690px;
+    height: 800px;
+}
+
+.tree .static {
+    overflow: visible;
+    top: 0px;
+    left: 10%;
+    position: absolute;
+    padding: 0px;
+    width: 500px;
+}
+
+
+#orn1 {
+    width: 100px;
+    position: absolute;
+    top: 290px;
+    left: calc(150px + 10%);
+}
+
+#orn2 {
+    width: 100px;
+    position: absolute;
+    top: 510px;
+    left: calc(90px + 10%);
+}
+
+#orn3 {
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    left: calc(260px + 10%);
+}
+
+#top .text {
+    position: absolute;
+    top: 320px;
+    left: calc(240px + 10%);
+}
+
+#bottom .text {
+    width: 340px;
+    position: absolute;
+    top: 540px;
+    left: calc(180px + 10%);
+}
+
+#middle .text {
+    width: 290px;
+    position: absolute;
+    top: 430px;
+    left: calc(-40px + 10%);
+}
+
+.ornament:hover .text {
+    opacity: 1;
+    background: var(--blue);
+    padding: 10px;
+    width: 250px;
+    font-family: "Henny Penny", system-ui;
+    color: var(--brown);
+    font-size: 18px;
+    border-radius: 15px;
+    position: absolute;
+    transition: 1s;
+}
+
+
+.ornament .text {
+    opacity: 0;
+    background: var(--blue);
+    padding: 10px;
+    width: 250px;
+    font-family: "Henny Penny", system-ui;
+    color: var(--brown);
+    font-size: 18px;
+    border-radius: 15px;
+    position: absolute;
+    top: 310px;
+    left: 520px;
+    transition: 1s;
+}
