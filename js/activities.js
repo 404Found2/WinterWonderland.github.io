@@ -5,17 +5,17 @@ function Activity(urlI, text, classes, link) {
     this.link = link;
 }
 
-var activities = [new Activity("../media/cookie.jpg", "Bake some amazing holiday-themed cookies!", ["baking", "indoors", "food"], "https://www.tasteofhome.com/collection/our-best-christmas-cookie-recipes/"),
-new Activity("../media/house.jpg", "Decorate a Gingerbread House!", ["baking", "indoors", "food"], "https://www.foodnetwork.com/recipes/gingerbread-house-recipe-1963254"),
-new Activity("../media/baubles.jpg", "Croquet a Christmas Ornament!", ["crafts", "indoors"], "https://easycraftspatterns.com/how-to-crochet-a-bauble-on-a-glass-ball/"),
-new Activity("../media/cards.jpg", "Make Chirstamas Cards!", ["crafts", "indoors"], "https://www.thesprucecrafts.com/diy-christmas-cards-4177042"),
-new Activity("../media/snowman.jpg", "Build a Snowman!", ["games", "outdoors"], "https://www.bobvila.com/articles/how-to-build-a-snowman/"),
-new Activity("../media/snowball.jpg", "Have a Snowball Fight!", ["games", "outdoors"], "https://christmasphere.com/how-to-organise-a-snowball-fight/"),
-new Activity("../media/treeLighting.jpg", "Go to a Local Christmas Festival!", ["food", "outdoors"], "https://www.yelp.com/nearme/christmas-things-to-do"),
-new Activity("../media/snowflakePaper.jpg", "Cut Out Paper Snowflakes!", ["food", "outdoors"], "https://onelittleproject.com/how-to-make-paper-snowflakes/"),
-new Activity("../media/toy.jpg", "Donate a Toy at a local Toy Drive", ["donate", "outdoors"], "https://www.toysfortots.org/find-your-local-chapter/"),
-new Activity("../media/volunteer.jpg", "Volunteer this Season!", ["donate", "outdoors"], "https://www.volunteermatch.org/"),
-new Activity("../media/movie.jpg", "Watch a Holiday Themed Movie", ["games", "indoors"], "https://editorial.rottentomatoes.com/guide/best-christmas-movies/")
+var activities = [new Activity("./media/cookie.jpg", "Bake some amazing holiday-themed cookies!", ["baking", "indoors", "food"], "https://www.tasteofhome.com/collection/our-best-christmas-cookie-recipes/"),
+new Activity("./media/house.jpg", "Decorate a Gingerbread House!", ["baking", "indoors", "food"], "https://www.foodnetwork.com/recipes/gingerbread-house-recipe-1963254"),
+new Activity("./media/baubles.jpg", "Croquet a Christmas Ornament!", ["crafts", "indoors"], "https://easycraftspatterns.com/how-to-crochet-a-bauble-on-a-glass-ball/"),
+new Activity("./media/cards.jpg", "Make Chirstamas Cards!", ["crafts", "indoors"], "https://www.thesprucecrafts.com/diy-christmas-cards-4177042"),
+new Activity("./media/snowman.jpg", "Build a Snowman!", ["games", "outdoors"], "https://www.bobvila.com/articles/how-to-build-a-snowman/"),
+new Activity("./media/snowball.jpg", "Have a Snowball Fight!", ["games", "outdoors"], "https://christmasphere.com/how-to-organise-a-snowball-fight/"),
+new Activity("./media/treeLighting.jpg", "Go to a Local Christmas Festival!", ["food", "outdoors"], "https://www.yelp.com/nearme/christmas-things-to-do"),
+new Activity("./media/snowflakePaper.jpg", "Cut Out Paper Snowflakes!", ["food", "outdoors"], "https://onelittleproject.com/how-to-make-paper-snowflakes/"),
+new Activity("./media/toy.jpg", "Donate a Toy at a local Toy Drive", ["donate", "outdoors"], "https://www.toysfortots.org/find-your-local-chapter/"),
+new Activity("./media/volunteer.jpg", "Volunteer this Season!", ["donate", "outdoors"], "https://www.volunteermatch.org/"),
+new Activity("./media/movie.jpg", "Watch a Holiday Themed Movie", ["games", "indoors"], "https://editorial.rottentomatoes.com/guide/best-christmas-movies/")
 ]
 
 function update() {
